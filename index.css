@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    /* display: flex; */
+}
+nav{
+    margin-top: -3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /*?*/
+}
+nav ul li{ /*aliging the nav bar*/
+    
+    display: inline-block; /*aligning horizontal*/
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    /*formatting nav bar*/
+    color: white;
+    text-decoration: none; /*removes underline from txt*/
+    font-size: 18px;
+    position: relative;
+    font-family: system-ui, -apple-system;
+}
+nav ul li a::after{
+    /*adding hover effect*/
+    content: '';
+    width: 0;
+    height: 1.5px;
+    background: #ff004f;
+    position: absolute; 
+    left: 0;
+    bottom: -6px;
+    transition: .3s;
+}
+nav ul li a:hover::after{
+    /*adding hover effect*/
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background: tan;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+#logo{
+    height: 200px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* creating the heading Software Engineer */
+
+#software_engineer a{ 
+    margin:10px 80px ;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    font-family: system-ui;
+
+    flex-wrap: wrap;/*for hovering purpose*/
+    position: relative;
+}
+#software_engineer span{
+    color: red;
+}
+#software_engineer a::after{
+
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: whitesmoke;
+    position: absolute; 
+    left: 4px;
+    display: flex;
+    bottom: 0px;
+    transition: .3s;
+        
+}
+#software_engineer a:hover:after{
+
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: red;
+    position: absolute; 
+    left: 4px;
+    display: flex;
+    bottom: 0px;
+        
+}
+
+#intro{
+    height: 800px;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+}
+
+#introleft{
+    height: 800px ;
+    width: 50%;
+    /* background-color: red; */
+
+    color: white;
+    margin-left: 80px;
+    margin-top: 10px;
+    font-family: system-ui;
+}
+#dot{
+    color: red;
+}
+#Name{
+    color: red;
+    font-family: system-ui;
+    position: relative;
+}
+#Name::after{
+
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: orangered;
+    position: absolute; 
+    left: 4px;
+    display: flex;
+    bottom: -1.5px;
+    transition: .3s;
+        
+}
+#Name:hover:after{
+
+    content: '';
+    width: 98%;
+    height: 5px;
+    background: red;
+    position: absolute; 
+    left: 4px;
+    display: flex;
+    bottom: -1.5px;
+        
+}
+#skills{
+    margin-top: 10px;
+    color: antiquewhite;
+    margin-left: 300px;
+    /* text-decoration: overline; */
+    /* text-decoration: underline; */
+
+}
+#intro h2{
+    color: #ff004f;
+}
+#intro li{
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: aquamarine;
+}
+#intro a{
+    color: aquamarine;
+    text-decoration: none;
+    position: relative;
+}
+
+#intro a::after{
+    content: '';
+    background-color: aquamarine;
+    position: absolute;
+    height: 4px;
+    width: 0;
+    display: flex;
+    left: 2px;
+    bottom: -5px;
+    transition: 1s;
+}
+
+#intro a:hover::after{
+    content: '';
+    background-color: yellow;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    display: flex;
+    left: 2px;
+    bottom: -5px;
+    transition: .5s;
+
+}
+
+
+
+#introright{
+    height: 800px;
+    width: 50%;
+    /* background-color: aqua; */
+}
+#introrightC1{
+    display: flex;
+}
+#introrightC1 img{
+    margin: 20px 20px;
+    border-radius: 50px;
+    display: flex;
+}
+#introrightC2 img{
+    padding-bottom: 50px;
+    /* padding: 20px 30px; */
+    height: 500px;
+    margin-left: 200px;
+    border-radius: 100px;
+
+}
+
+
+#next{
+        height: 1000px;
+        width: 100%;
+        /* background-color: #fff; */
+        margin-top: 0px;
+        display: flex;
+    }
+
+#boxl{
+    padding-top: 80px;
+    height: 800px;
+    width: 50%;
+    /* background-color: yellow;     */
+}
+#boxl img{
+    margin-left: 60px;
+    height: 250px;
+}
+#hover1{
+    font-family: system-ui;
+    margin-top: 30px;
+    justify-content: left;
+    /* justify-content: space-between; */
+}
+
+#c{
+    margin-left: 180px;
+    color: aliceblue;
+    display: flex;
+}
+#c::after{
+    content: '';
+    background-color: yellow;
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    background: tan;
+    position: absolute;
+    left: 0;
+    /* bottom: -6px; */
+    transition: 1s;
+}
+#c:hover::after{
+    content: 'I have created many projects using C language.It was my first programming language. I have deep knowledge of C language. I have been using C language for 2 years. I can solve complex problems using C language.';
+    background-color: royalblue;
+    color: royalblue;
+    position: absolute;
+    background: tan;
+
+    width: 15%;
+    height: 1.5px;
+    left: 70px;
+    bottom: -500px;
+    transition: 1s;
+}
+#html{
+    margin-left: 280px;
+    color: aliceblue;
+}
+#html::after{
+    content: '';
+    background-color: rgb(48, 14, 201);
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    display: flex;
+    left: 27%;
+    /* bottom: -5px; */
+    transition: .5s;
+}
+#html:hover::after{
+    content: 'I am expert in HTML. I have written a lot code in HTML. This website is also desinged by me using HTML. I can code complex websites using HTMl. I can design high quality websites using HTML.';
+    background-color: white;
+    color: orangered;
+    position: absolute;
+
+    width: 15%;
+    height: 1.5px;
+    left: 400px;
+    bottom: -500px;
+    transition: 1.1s;
+}
+
+#css{
+    margin-left: 250px;
+    color: aliceblue;
+}
+#css::after{
+    content: '';
+    background-color: skyblue;
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    display: flex;
+    left: 42%;
+    /* bottom: -5px; */
+    transition: .5s;
+}
+#css:hover::after{
+    content: 'CSS is used for designing purposes. I have handsome amount of experience in CSS. I can design good looking UI & websites using CSS. This website is also designed by me using CSS.';
+    background-color: royalblue;
+    color: skyblue;
+    position: absolute;
+
+    width: 15%;
+    height: 1.5px;
+    left: 700px;
+    bottom: -500px;
+    transition: 1s;
+}
+
+#boxr{
+    height: 800px;
+    width: 50%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 390px;
+    color: white;
+    font-size: 15px;
+    /* background-color: lime; */
+}
